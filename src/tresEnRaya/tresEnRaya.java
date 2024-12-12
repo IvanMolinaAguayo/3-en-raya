@@ -72,6 +72,17 @@ public class tresEnRaya {
 			                    System.out.println("\n¡" + (turnoJugador1 ? jugador1 : jugador2) + " ha ganado!");
 			                    break;
 			                }
+		                
+		                //Si el tablero acaba lleno sin un ganador, declaramos el empate
+		                
+		                if (movimientos == 8) {
+		                    System.out.println("\n¡Es un empate!");
+		                }
+		                
+		                turnoJugador1 = !turnoJugador1;
+	            }
+
+
 
 
 
