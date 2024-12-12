@@ -21,7 +21,8 @@ public class tresEnRaya {
 
 	        do {
 	            char[][] tablero = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
-	            
+	            boolean turnoJugador1 = random.nextBoolean(); //Utilizamos un boolean para dictaminar que jugador inicia
+
 
 
 	}
