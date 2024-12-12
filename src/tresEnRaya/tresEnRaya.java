@@ -36,6 +36,14 @@ public class tresEnRaya {
 		                System.out.print("Elige una posición (1-9): ");
 		                String posicion = scr.nextLine();
 
+		                try {
+		                    int pos = Integer.parseInt(posicion) - 1;
+		                    if (tablero[pos / 3][pos % 3] == 'X' || tablero[pos / 3][pos % 3] == 'O') {
+		                        System.out.println("Posición incorrecta o ocupada. Prueba otro valor.");
+		                        movimientos--;
+		                        continue;
+		                    }
+		                    
 
 	}
 }
