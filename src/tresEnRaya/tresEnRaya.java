@@ -81,6 +81,9 @@ public class tresEnRaya {
 		                
 		                turnoJugador1 = !turnoJugador1;
 	            }
+	            
+	        		} while (scr.nextLine().trim().equalsIgnoreCase("r"));
+	            
 
 
 
