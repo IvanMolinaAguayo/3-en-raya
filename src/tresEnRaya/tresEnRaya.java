@@ -16,6 +16,13 @@ public class tresEnRaya {
 	        String jugador1 = scr.nextLine();
 	        System.out.print("Ingrese el nombre del segundo jugador: ");
 	        String jugador2 = scr.nextLine();
+	        
+	        // Iniciamos el bucle , creamos el tabl
+
+	        do {
+	            char[][] tablero = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+	            
+
 
 	}
 }
