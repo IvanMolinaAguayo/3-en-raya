@@ -64,6 +64,15 @@ public class tresEnRaya {
 		                        break;
 		                    }
 		                }
+		                
+		                //Comprobamos si el ganador está en las diagonales
+		                
+		                if ((tablero[0][0] == tablero[1][1] && tablero[1][1] == tablero[2][2]) ||
+			                    (tablero[0][2] == tablero[1][1] && tablero[1][1] == tablero[2][0])) {
+			                    System.out.println("\n¡" + (turnoJugador1 ? jugador1 : jugador2) + " ha ganado!");
+			                    break;
+			                }
+
 
 
 
