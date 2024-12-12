@@ -24,6 +24,8 @@ public class tresEnRaya {
 	            boolean turnoJugador1 = random.nextBoolean(); //Utilizamos un boolean para dictaminar que jugador inicia
 	            System.out.println("Moneda al aire... " + (turnoJugador1 ? jugador1 : jugador2) + " iniciará el juego ");
 
+	            for (int movimientos = 0; movimientos < 9; movimientos++) {
+
 
 
 	}
