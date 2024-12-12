@@ -31,11 +31,15 @@ public class tresEnRaya {
 		                    System.out.println(" " + fila[0] + " | " + fila[1] + " | " + fila[2]);
 		                    if (fila != tablero[2]) System.out.println("---|---|---"); //Mostramos el tablero por pantalla
 		                }
+	            	  
+	            	  //Pedimos al jugador que escoga una posición
 
 	            	   System.out.println("\nTurno de " + (turnoJugador1 ? jugador1 : jugador2));
 		                System.out.print("Elige una posición (1-9): ");
 		                String posicion = scr.nextLine();
-
+		                
+		                //Comprobamos que la posición escogida por el jugador es válida y la marcamos
+		                
 		                try {
 		                    int pos = Integer.parseInt(posicion) - 1;
 		                    if (tablero[pos / 3][pos % 3] == 'X' || tablero[pos / 3][pos % 3] == 'O') {
@@ -43,6 +47,13 @@ public class tresEnRaya {
 		                        movimientos--;
 		                        continue;
 		                    }
+		                    tablero[pos / 3][pos % 3] = turnoJugador1 ? 'X' : 'O';
+		                } catch (Exception e) {
+		                    System.out.println("Entrada inválida. Inténtalo de nuevo.");
+		                    movimientos--;
+		                    continue;
+		                }
+
 		                    
 
 	}
