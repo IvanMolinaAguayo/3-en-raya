@@ -32,6 +32,9 @@ public class tresEnRaya {
 		                    if (fila != tablero[2]) System.out.println("---|---|---"); //Mostramos el tablero por pantalla
 		                }
 
+	            	   System.out.println("\nTurno de " + (turnoJugador1 ? jugador1 : jugador2));
+		                System.out.print("Elige una posición (1-9): ");
+		                String posicion = scr.nextLine();
 
 
 	}
