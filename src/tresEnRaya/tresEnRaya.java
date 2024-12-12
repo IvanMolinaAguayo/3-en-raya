@@ -53,6 +53,19 @@ public class tresEnRaya {
 		                    movimientos--;
 		                    continue;
 		                }
+		                
+		                //Comprobamos el ganador en filas y columnas
+		                
+		                for (int i = 0; i < 3; i++) {
+		                    if ((tablero[i][0] == tablero[i][1] && tablero[i][1] == tablero[i][2]) ||
+		                        (tablero[0][i] == tablero[1][i] && tablero[1][i] == tablero[2][i])) {
+		                        System.out.println("\n¡" + (turnoJugador1 ? jugador1 : jugador2) + " ha ganado!");
+		                        movimientos = 9;
+		                        break;
+		                    }
+		                }
+
+
 
 		                    
 
