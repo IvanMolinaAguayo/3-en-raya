@@ -82,7 +82,14 @@ public class tresEnRaya {
 		                turnoJugador1 = !turnoJugador1;
 	            }
 	            
+	            	//Con la función añadida, pulsando el botón "r" podremos reiniciar la partida
+	            
 	        		} while (scr.nextLine().trim().equalsIgnoreCase("r"));
+	        
+	        
+	        		System.out.println("Espero que hayan disfrutado del juego");
+	        		scr.close();
+
 	            
 
 
